@@ -1,60 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moeed | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafiz Muhammad Moeed | Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #0b1120; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%); }
+        .text-gradient { background: linear-gradient(135deg, #60a5fa 0%, #22d3ee 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
 </head>
-<body>
-  <header class="hero">
-    <div class="container">
-      <h1>Hi, I'm <span class="highlight">Moeed</span></h1>
-      <p>Front-End Developer | Designer | Freelancer</p>
-      <div class="socials">
-        <a href="https://github.com/muhammadmoeed224">GitHub</a>
-        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LinkedIn</a>
-        <a href="https://mail.google.com/mail/u/0/#search/moeed.2242003%40gmail.com?compose=new">Email</a>
-      </div>
-    </div>
-  </header>
+<body class="leading-relaxed text-slate-300">
 
-  <section class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p>Responsive portfolio built with HTML & CSS</p>
-          <a href="#">View Project</a>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-card px-6 py-4 flex justify-between items-center">
+        <span class="text-xl font-bold text-white tracking-wide">Moeed<span class="text-blue-400">.Analytics</span></span>
+        <div class="space-x-6 text-sm font-medium hidden md:block">
+            <a href="#about" class="hover:text-blue-400 transition">About</a>
+            <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+            <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
         </div>
-        <div class="card">
-          <h3>Landing Page</h3>
-          <p>Clean, modern landing page for marketing</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="card">
-          <h3>Blog Template</h3>
-          <p>Simple blog layout with custom styling</p>
-          <a href="#">View Project</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>I'm open for collaboration and freelance work.</p>
-      <a href="moeed.2242003@gmail.com" class="btn">Say Hello</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-24 px-6">
+        <div class="max-w-4xl text-center space-y-6">
+            <div class="inline-block px-4 py-1.5 rounded-full glass-card text-blue-400 text-sm font-semibold mb-2">
+                👋 Hello, I'm Hafiz Muhammad Moeed
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                Transforming Data Into <span class="text-gradient">Actionable Insights</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+                Data Analyst & BS AI Student. I build end-to-end interactive dashboards, business intelligence systems, and supply chain analytics solutions.
+            </p>
+            <div class="flex justify-center gap-4 pt-4">
+                <a href="#projects" class="accent-gradient text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:opacity-90 transition">
+                    View My Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="https://github.com/muhammadmoeed224" target="_blank" class="glass-card text-white font-semibold px-6 py-3 rounded-xl hover:bg-slate-800 transition">
+                    <i class="fab fa-github mr-2"></i> GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Moeed. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-white text-center mb-12">Core Competencies</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="glass-card p-6 rounded-2xl text-center hover:border-blue-500 transition">
+                <i class="fab fa-python text-4xl text-blue-400 mb-3"></i>
+                <h3 class="font-semibold text-white">Python</h3>
+                <p class="text-xs text-slate-400 mt-1">Pandas, Streamlit, Data Wrangling</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:border-blue-500 transition">
+                <i class="fas fa-chart-pie text-4xl text-yellow-400 mb-3"></i>
+                <h3 class="font-semibold text-white">Power BI</h3>
+                <p class="text-xs text-slate-400 mt-1">DAX, Data Modeling, Custom UI</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:border-blue-500 transition">
+                <i class="fas fa-database text-4xl text-green-400 mb-3"></i>
+                <h3 class="font-semibold text-white">SQL & Excel</h3>
+                <p class="text-xs text-slate-400 mt-1">Queries, Aggregations, Pivot Tables</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:border-blue-500 transition">
+                <i class="fas fa-truck-ramp-box text-4xl text-cyan-400 mb-3"></i>
+                <h3 class="font-semibold text-white">Supply Chain Analytics</h3>
+                <p class="text-xs text-slate-400 mt-1">KPI Tracking, Risk & Cost Analysis</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-white text-center mb-4">Featured Data Projects</h2>
+        <p class="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Here are my live interactive web apps and business intelligence dashboards.</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Project 1: Streamlit App -->
+            <div class="glass-card rounded-2xl overflow-hidden hover:border-blue-500 transition flex flex-col">
+                <img src="streamlit_preview.png" alt="Streamlit App" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-500/20 text-blue-400">Python & Streamlit</span>
+                            <span class="text-xs text-slate-400">Live Web App</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Global Supply Chain Interactive Web App</h3>
+                        <p class="text-sm text-slate-400 mb-4">
+                            A real-time analytics web application built with Streamlit. Features live KPI tracking, dynamic vendor cost analysis, risk distribution charts, and custom CSV dataset uploading.
+                        </p>
+                    </div>
+                    <div class="pt-4 flex gap-3">
+                        <a href="https://supply-chain-dashboard-fzargqn6h27xbbxb9zvalr.streamlit.app" target="_blank" class="accent-gradient text-white text-xs font-semibold px-4 py-2.5 rounded-lg hover:opacity-90 transition flex-1 text-center">
+                            <i class="fas fa-external-link-alt mr-1"></i> Live Web App
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Power BI Dashboard -->
+            <div class="glass-card rounded-2xl overflow-hidden hover:border-blue-500 transition flex flex-col">
+                <img src="powerbi_preview.png" alt="Power BI Dashboard" class="w-full h-48 object-cover">
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">Power BI & DAX</span>
+                            <span class="text-xs text-slate-400">BI Dashboard</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Supply Chain Optimization BI Dashboard</h3>
+                        <p class="text-sm text-slate-400 mb-4">
+                            An end-to-end Power BI report tracking 32K+ shipments and $14.7M+ costs. Features custom dark UI layout, carrier performance analysis, and risk classification donut charts.
+                        </p>
+                    </div>
+                    <div class="pt-4 flex gap-3">
+                        <a href="https://github.com/muhammadmoeed224/Global-Supply-Chain-PowerBI-Dashboard" target="_blank" class="glass-card text-white text-xs font-semibold px-4 py-2.5 rounded-lg hover:bg-slate-800 transition flex-1 text-center">
+                            <i class="fab fa-github mr-1"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="py-12 border-t border-slate-800 text-center text-sm text-slate-500">
+        <p class="mb-4 text-slate-300 font-medium">Connect with me on social platforms</p>
+        <div class="flex justify-center space-x-6 text-xl mb-6">
+            <a href="https://github.com/muhammadmoeed224" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© 2026 Hafiz Muhammad Moeed. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
